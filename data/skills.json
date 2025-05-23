@@ -1,0 +1,77 @@
+[
+    {
+      "name": "HTML",
+      "icon": "/HTML.png",
+      "description": "I have good HTML skills, which serve as the foundation of web development. With a solid understanding, I can create well-structured and standards-compliant websites. Additionally, my certificates reinforce my expertise, giving me confidence in developing functional and user-friendly websites."
+    },
+    {
+      "name": "CSS",
+      "icon": "/css.png",
+      "description": "I have good CSS skills, which are essential for styling and laying out websites. With a solid understanding of CSS, I can create visually appealing, responsive, and well-structured designs. My knowledge of CSS frameworks and best practices, combined with relevant certifications, allows me to confidently build stylish, user-friendly, and adaptable websites."
+    },
+    {
+      "name": "JavaScript",
+      "icon": "/js.png",
+      "description": "I have a good understanding of JavaScript, especially in front-end development. I am capable of using JavaScript to create interactive and dynamic websites, enhancing the user experience. In addition to my relevant knowledge, I have taken several courses on JavaScript, covering both front-end and back-end development, as well as general JavaScript concepts. These courses have further strengthened my skills, and with the certifications I hold."
+    },
+    {
+      "name": "Python",
+      "icon": "/python.png",
+      "description": "I have a basic understanding of Python, especially in data science, where I’ve learned fundamental programming concepts like data types, while statements, methods, classes, functions, and file processing. I’ve also participated in a Python fundamental course, which has strengthened my skills in applying Python for various data-related tasks."
+    },
+    {
+      "name": "C",
+      "icon": "/C.png",
+      "description": "I have a basic understanding of C programming, which has provided me with a strong foundation in computer science concepts. I've learned essential C concepts such as variables, loops, conditionals, and functions, and have applied them in various small projects. This knowledge gives me the ability to write simple, efficient programs and understand core programming principles."
+    },
+    {
+      "name": "Java",
+      "icon": "/Java.png",
+      "description": "I have a basic understanding of Java, which is widely used in software development for building reliable and scalable applications. I have learned fundamental concepts such as variables, loops, methods, object-oriented programming (OOP), classes, and functions. With Java, I can create simple applications and understand core concepts that are essential for more advanced development. I have also worked on small projects, gaining hands-on experience in applying Java to solve real-world problems."
+    },
+    {
+      "name": "MySQL",
+      "icon": "/mysql.png",
+      "description": "I have a basic understanding of MySQL and have applied it in creating projects using phpMyAdmin through XAMPP and Laragon. I’m familiar with creating and managing databases, writing queries, and performing tasks like inserting, updating, and deleting records. This knowledge allows me to build simple database-driven applications and manage data efficiently."
+    },
+    {
+      "name": "R",
+      "icon": "/R.png",
+      "description": "I have a basic understanding of R, particularly in data analysis and visualization. I've learned how to use R's powerful libraries like ggplot2 and dplyr to create informative visualizations and analyze datasets effectively. Through various courses and hands-on practice."
+    },
+    {
+      "name": "Laravel",
+      "icon": "/laravel.png",
+      "description": "I have basic experience with Laravel, a popular PHP framework, and have used it to build web applications. Laravel provides a clean and elegant syntax, which makes developing complex web systems more manageable. I have learned how to work with routes, controllers, views, migrations, and models in Laravel to build scalable applications."
+    },
+    {
+      "name": "Tailwind",
+      "icon": "/tailwind.png",
+      "description": "I have a good understanding of Tailwind CSS, which is a utility-first CSS framework that allows for fast and efficient web design. I can use Tailwind to create responsive, clean, and customizable designs with minimal effort. By applying utility classes directly in HTML, I can quickly style elements without writing custom CSS. I’ve worked on several projects using Tailwind, which has helped me develop a strong grasp of creating modern, responsive web interfaces efficiently. My portfolio website is built using Tailwind CSS, which helped me create a clean, responsive, and modern design. By utilizing Tailwind’s utility-first approach, I was able to efficiently style the website without writing extensive custom CSS. This allowed me to focus on creating a user-friendly interface and ensuring the design is adaptable across different screen sizes. Tailwind’s flexibility and ease of use played a key role in bringing my portfolio to life with a polished, professional look."
+    },
+    {
+      "name": "GitHub",
+      "icon": "/github.png",
+      "description": "I have experience using Git and GitHub to manage project versions and collaborate with other developers. Git allows me to track changes, manage branches, and revert to previous versions when necessary, ensuring the code stays organized and consistent. GitHub serves as a remote repository where I can push my code, share it with collaborators, and maintain a well-documented history of my projects. This version control system is crucial for efficient teamwork and ensuring code integrity throughout development. Additionally, my portfolio and other projects are stored and versioned on GitHub, showcasing my ability to manage and organize codebases."
+    },
+    {
+      "name": "WordPress",
+      "icon": "/wordpress.png",
+      "description": "I have experience working with WordPress, especially in building and managing websites. At Yayasan Al-Hadiid, I was involved in developing and maintaining the foundation's website using WordPress. This gave me hands-on experience with the platform's features, themes, and plugins, allowing me to create a functional and user-friendly site for the organization. Additionally, I have worked on several WordPress projects, where I applied my knowledge to customize themes, install plugins, and optimize performance. WordPress has been a valuable tool in my web development journey, as it allows me to deliver dynamic websites with ease."
+    },
+    {
+      "name": "Figma",
+      "icon": "/figma.png",
+      "description": "I have experience using Figma, a design tool that I have become familiar with through my participation in a UI/UX course. During the course, I learned the fundamentals of UI/UX design and how to create user-friendly interfaces. Figma has been a valuable tool for designing wireframes, prototypes, and user interfaces, helping me bring my design ideas to life. My interest in UI/UX continues to grow as I develop my skills in crafting intuitive and aesthetically pleasing user experiences."
+    },
+    {
+      "name": "Canva",
+      "icon": "/canva.png",
+      "description": ""
+    },
+    {
+      "name": "InkScape",
+      "icon": "/inkscape.png",
+      "description": ""
+    }
+  ]
