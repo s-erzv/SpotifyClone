@@ -1,40 +1,33 @@
-# Personal Portfolio
+# 🎧 Spotify Premium Clone
 
-Welcome to my personal portfolio repository! This project is built using Next.js, Tailwind CSS, and TypeScript to create a modern, responsive, and performant web application showcasing my skills, projects, and experiences.
+Spotify Premium Clone is a music streaming application that allows users to listen to music and subscribe to a premium plan using Stripe. Built with Next.js, Tailwind CSS, Supabase, and Stripe.
 
-## Figma Prototype
+---
 
-You can preview the design and user flow of this project through the Figma prototype. Click the link below to explore the interactive mockup:
+## 🚀 Features
 
-[Figma Prototype](https://www.figma.com/proto/e6Pip21AYgD1fE6a9pYS1P/serzv?node-id=28-303&t=UBUqKjSnplZcpHop-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=47%3A2&show-proto-sidebar=1)
+- 🔒 Authentication (Login/Register) using Supabase
+- 🎵 Upload and play music
+- 💳 Premium subscription using Stripe Checkout
+- 📦 Stripe Customer Portal to manage subscriptions
+- 🧠 Subscription modal to display premium products
+- 🧱 Responsive and modern UI with Tailwind CSS
 
-## Live Demo
+---
 
-You can view the deployed version of this portfolio at the following link:
+## 🛠️ Technologies
 
-🔗 [Live Demo on Vercel](https://main-portfolio-three-beta.vercel.app/)
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **Supabase (Auth + Database + Storage)**
+- **Stripe (Checkout & Portal)**
+- **React Hook Form & Zod**
+- **react-hot-toast**
+- **Lucide React Icons**
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+---
 
-## Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
