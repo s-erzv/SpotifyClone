@@ -7,6 +7,7 @@ import UserProvider from "@/providers/UserProvider";
 import ModalProvider from "@/providers/ModalProvider";
 import ToasterProvider from "@/providers/ToasterProvider";
 import Player from "@/components/Player";
+import getActiveProductWithPrices from "@/actions/getActiveProductWithPrices";
 
 const font = Figtree({
   subsets: ["latin"],
@@ -25,6 +26,10 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const products = await getActiveProductWithPrices();
+
+
   return (
     <html lang="en">
       <body
@@ -33,7 +38,7 @@ export default async function RootLayout({
         <ToasterProvider />
         <SupabaseProvider>
           <UserProvider>
-            <ModalProvider></ModalProvider>
+            <ModalProvider products={products}/>
             <Sidebar>
               {children}
             </Sidebar>
