@@ -1,17 +1,22 @@
 import { createRouteHandlerClient } from "@supabase/auth-helpers-nextjs";
-import { headers, cookies } from "next/headers";
+import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 
 import { stripe } from "@/libs/stripe";
 import { getUrl } from "@/libs/helpers";
 import { createOrRetrieveACustomer } from "@/libs/supabaseAdmin";
 
+interface CheckoutBody {
+  price: string; // langsung string ID dari frontend
+  quantity?: number;
+  metadata?: Record<string, unknown>;
+}
+
 export async function POST(request: Request) {
-  const { price, quantity = 1, metadata = {} } = await request.json();
+  const { price, quantity = 1, metadata = {} }: CheckoutBody = await request.json();
 
   try {
     const supabase = createRouteHandlerClient({ cookies });
-
     const { data: { user }} = await supabase.auth.getUser();
 
     const customer = await createOrRetrieveACustomer({
@@ -20,12 +25,11 @@ export async function POST(request: Request) {
     });
 
     const session = await stripe.checkout.sessions.create({
-      payment_method_types: ["card"],
       billing_address_collection: "required",
-      customer,
+      customer: customer,
       line_items: [
         {
-          price: price.id,
+          price,
           quantity,
         },
       ],
@@ -33,19 +37,19 @@ export async function POST(request: Request) {
       allow_promotion_codes: true,
       subscription_data: {
         trial_from_plan: true,
-        metadata
+        metadata,
       },
       success_url: `${getUrl()}/account`,
       cancel_url: `${getUrl()}`,
     });
 
+
+
     return NextResponse.json({ sessionId: session.id });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error(error);
-    return new NextResponse(
-      `Internal Server Error: ${error.message || 'Unknown error'}`, 
-      { status: 500 }
-    );
+    const errorMessage = error instanceof Error ? error.message : "Unknown error";
+    return new NextResponse(`Internal Server Error: ${errorMessage}`, { status: 500 });
   }
 }

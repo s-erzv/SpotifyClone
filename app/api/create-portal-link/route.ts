@@ -6,7 +6,7 @@ import { stripe } from "@/libs/stripe";
 import { getUrl } from "@/libs/helpers";
 import { createOrRetrieveACustomer } from "@/libs/supabaseAdmin";
 
-export async function POST(request: Request) {
+export async function POST() {
   //const { price, quantity = 1, metadata = {} } = await request.json(); 
 
   try {
@@ -32,11 +32,15 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ url });
 
-  } catch (err: any) {
-    console.error(err);
-    return new NextResponse(
-      'Internal Server Error', 
-      { status: 500 }
-    );
-  }
+  } catch (error: unknown) {
+  console.error(error);
+
+  const errorMessage = 
+    error instanceof Error ? error.message : "Unknown error";
+
+  return new NextResponse(
+    `Internal Server Error: ${errorMessage}`, 
+    { status: 500 }
+  );
+}
 }
